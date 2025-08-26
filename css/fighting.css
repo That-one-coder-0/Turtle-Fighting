@@ -306,24 +306,27 @@ button:hover{
     0%{background-image: url(../assets/turtle/yellow/\(state-moving-right\)/1.png);}
     100%{background-image: url(../assets/turtle/yellow/\(state-moving-right\)/2.png);}
 }
-#BP1,#BP2{
+#BP1div,#BP2div{
     position: absolute;
+    width: 25vw;
+    height: 4vw;
+}
+#BP1,#BP2{
     width: 20vw;
     height: 3vw;
-}
-#BP1{
-    top: 0px;
-    left:0.5%;
-}
-#BP2{
-    top: 0px;
-    right:0.5%;
 }
 meter{
     border-radius: 0;
 }
 #BP1div{
-
+    top: 0px;
+    left:0px;
+    background-image: radial-gradient(darkblue,blue);
+}
+#BP1div{
+    top: 0px;
+    right:0px;
+    background-image: radial-gradient(darkblue,blue);
 }
 meter::-webkit-meter-optimum-value {
   box-shadow: 0 5px 5px -5px #999 inset;
