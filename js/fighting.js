@@ -172,7 +172,6 @@ function gameLoop() {
             }
         }
     });
-
     if (player.x < 0) {
         player.x = 0;
     }
@@ -281,11 +280,17 @@ function startGame() {
     if(multimode == '2'){
         player3.y = 1364
         player3.x = 1;
+        gebid('BP1h1').textContent = '100/100';
+        gebid('BP2h1').textContent = '100/100';
+        gebid('BP3h1').textContent = '100/100';
+        gebid('BP3div').style.display = 'none';
     }else if(multimode == '3'){
         player3.y = 1.6;
         player3.x = 50;
+        gebid('BP1h1').textContent = '100/100';
+        gebid('BP2h1').textContent = '100/100';
+        gebid('BP3h1').textContent = '100/100';
     }
-    
     timer.textContent = gebid('timeSet').value
     started = true;
     createPlatforms()
