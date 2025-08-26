@@ -159,12 +159,6 @@ button:hover{
     0%{background-image: url(../assets/turtle/red/\(state-moving-right\)/1.png);}
     100%{background-image: url(../assets/turtle/red/\(state-moving-right\)/2.png);}
 }
-@keyframes red-state-ready-left {
-    
-}
-@keyframes red-state-ready-right {
-    
-}
 /*box*/
 @keyframes box-state-defence-enter-left {
     12.5%{background-image: url(../assets/turtle/box/\(state-defence-enter-left\)/1.png);}
@@ -213,12 +207,6 @@ button:hover{
 @keyframes box-state-moving-right {
     0%{background-image: url(../assets/turtle/box/\(state-moving-right\)/1.png);}
     100%{background-image: url(../assets/turtle/box/\(state-moving-right\)/2.png);}
-}
-@keyframes box-state-ready-left {
-    
-}
-@keyframes box-state-ready-right {
-    
 }
 /*paint*/
 @keyframes paint-state-defence-enter-left {
@@ -269,12 +257,6 @@ button:hover{
     0%{background-image: url(../assets/turtle/paint/\(state-moving-right\)/1.png);}
     100%{background-image: url(../assets/turtle/paint/\(state-moving-right\)/2.png);}
 }
-@keyframes paint--ready-left {
-    
-}
-@keyframes paint-state-ready-right {
-    
-}
 /*yellow*/
 @keyframes yellow-state-defence-enter-left {
     12.5%{background-image: url(../assets/turtle/yellow/\(state-defence-enter-left\)/1.png);}
@@ -324,12 +306,6 @@ button:hover{
     0%{background-image: url(../assets/turtle/yellow/\(state-moving-right\)/1.png);}
     100%{background-image: url(../assets/turtle/yellow/\(state-moving-right\)/2.png);}
 }
-@keyframes yellow-state-ready-left {
-    
-}
-@keyframes yellow-state-ready-right {
-    
-}
 #BP1,#BP2{
     position: absolute;
     width: 20vw;
@@ -345,6 +321,9 @@ button:hover{
 }
 meter{
     border-radius: 0;
+}
+#BP1div{
+
 }
 meter::-webkit-meter-optimum-value {
   box-shadow: 0 5px 5px -5px #999 inset;
