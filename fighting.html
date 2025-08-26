@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fighting game</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/fighting.css">
+</head>
+<body id="gameScreen">
+    <input type="hidden" id="timeSet" value="60">
+    <div id="mainScreen">
+         <div id="modeSelect">
+            <br>
+            <button id="multiPlayer" onclick="multi1()">2 Player</button>
+            <br><br>
+            <button id="singlePlayer" onclick="multi2()">3 Player</button>
+            <br>
+        </div>
+    </div>
+    <div id="gameContainer" style='background-image: url("assets/backgrounds/sky.png"); background-repeat: no-repeat;background-size: cover;'>
+        <h1 id="timer">0</h1>
+        <div id="endDiv">
+            <h1 id="h1 end"></h1>
+            <h2 id="h2 end"></h2>
+            <!--<button id="backToMain" onclick="">Back to main menu</button>-->
+            <button id="backToMain" onclick="window.location.reload()">Back to main menu</button>
+            <button id="playAgain" onclick="startGame()">Play again</button>
+        </div>
+        <div style="width: 5.567765567765568vw;height: 3.8095238095238098vw;" id="player"></div>
+        <div style="width: 5.567765567765568vw;height: 3.8095238095238098vw;" id="player2"></div>
+        <div style="width: 5.567765567765568vw;height: 3.8095238095238098vw;" id="player3"></div>
+        <meter id="BP1" max="100" min="0" value="100" high="60" low="30" optimum="100"></meter>
+        <meter id="BP2" max="100" min="0" value="100" high="60" low="30" optimum="100"></meter>
+    </div>
+    <div id="selectCharcter" style="display: none;">
+        <div id="selectCharcter1">
+            <button onclick="select3()"><</button>
+            <img src="assets/turtle/red/(state-ready-right).png" id="img2">
+            <button onclick="select4()">></button>
+            <br>
+            <h3>Player 1 <br> <img src="assets/other/wad.png"width="120"></h3>
+            <button id="submit1" onclick="Submit1()">Submit</button>
+        </div>
+        <div id="selectCharcter2" style="display: none;">
+            <button onclick="select1()"><</button>
+            <img src="assets/turtle/red/(state-ready-left).png" id="img1">
+            <button onclick="select2()">></button>
+            <br>
+            <h3>Player 2 <br> <img src="assets/other/←↑→.png"width="120"></h3>
+            <button id="submit2" onclick="Submit2()">Submit</button>
+        </div>
+        <div id="selectCharcter3" style="display: none;">
+            <button onclick="select5()"><</button>
+            <img src="assets/turtle/red/(state-ready-left).png" id="img3">
+            <button onclick="select6()">></button>
+            <br>
+            <h3>Player 3 <br> <img src="assets/other/ijl.png"width="120"></h3>
+            <button id="submit3" onclick="Submit3()">Submit</button>
+        </div>
+    </div>
+    <audio src="sounds/songs/Racing mode.mp3" id="audio"></audio>
+    <script src="js/fighting.js">
+    </script>
+</body>
+</html>
