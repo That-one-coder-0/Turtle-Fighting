@@ -336,6 +336,8 @@ meter{
     border-radius: 0px 0px 10px 10px;
 }
 h3{
+    position: absolute;
+    left: 0px;
     color: chartreuse;
 }
 meter::-webkit-meter-optimum-value {
