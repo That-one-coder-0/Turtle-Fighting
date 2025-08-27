@@ -315,6 +315,9 @@ button:hover{
 #BP1,#BP2,#BP3{
     width: 20vw;
     height: 3vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 meter{
     border-radius: 0;
