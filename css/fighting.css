@@ -309,7 +309,7 @@ button:hover{
 #BP1div,#BP2div,#BP3div{
     position: absolute;
     width: 25vw;
-    height: 4vw;
+    height: 5vw;
     background-image: radial-gradient(darkblue,blue);
 }
 #BP1,#BP2,#BP3{
@@ -322,15 +322,21 @@ meter{
 #BP1div{
     top: 0px;
     left:0px;
+    border-radius: 0px 0px 10px 0px;
 }
 #BP2div{
     top: 0px;
     right:0px;
+    border-radius: 0px 0px 0px 10px;
 }
 #BP3div{
     top: 0px;
     right:-50%;
     translate: -50%;
+    border-radius: 0px 0px 10px 10px;
+}
+h3{
+    color: chartreuse;
 }
 meter::-webkit-meter-optimum-value {
   box-shadow: 0 5px 5px -5px #999 inset;
