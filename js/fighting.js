@@ -69,6 +69,7 @@ const keys = {};
 const keyCombo = {} ;
 document.addEventListener('keydown', function(e) {
     let randNumber = random(0,200);
+    keyCombo[e.key.toUpperCase()] = true;
     keyCombo[e.key.toUpperCase()+randNumber] = {};
     keyCombo[e.key.toUpperCase()+randNumber].ms = 1000;
     keyCombo[e.key.toUpperCase()+randNumber].name = ''+e.key.toUpperCase()+randNumber;
