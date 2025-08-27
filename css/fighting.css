@@ -344,6 +344,16 @@ meter{
     left: 0px;
     color: chartreuse;
 }
+#BP1h3{
+    left: 0px;
+}
+#BP2h3{
+    right: 0px;
+}
+#BP3h3{
+    left: 50%;
+    translate: -50%;
+}
 meter::-webkit-meter-optimum-value {
   box-shadow: 0 5px 5px -5px #999 inset;
   background-image:linear-gradient(90deg,green 0%,limegreen 50%,lime 100%);

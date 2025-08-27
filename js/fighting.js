@@ -540,6 +540,7 @@ function multi2() {
     multimode = '3'; 
 }
 function attack(){
+    
 }
 
 // List all image paths you want to preload
