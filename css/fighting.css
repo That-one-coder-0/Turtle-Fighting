@@ -341,7 +341,6 @@ meter{
 }
 #BP1h3,#BP2h3,#BP3h3{
     position: absolute;
-    left: 0px;
     color: chartreuse;
 }
 #BP1h3{
