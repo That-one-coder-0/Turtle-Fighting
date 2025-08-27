@@ -51,7 +51,7 @@ let platforms = [
     { x:0,y:0,width:100,height:1.611721611721612},//This is the ground ***DON"T CHANGE THE ORDER***
 ];
 setInterval(TimerCheck,1000)
-setInterval(Decrease,100)
+setInterval(Decrease,10000)
 function Decrease() {
     try {
         Object.values(keyCombo).forEach(key => {
@@ -539,7 +539,7 @@ function multi2() {
     gebid('img3').style.width = '18vw'; 
     multimode = '3'; 
 }
-function attack(){
+function checkingKeyCombo() {
     
 }
 
