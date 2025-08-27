@@ -316,8 +316,9 @@ button:hover{
     width: 20vw;
     height: 3vw;
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom: 0;
+    translate: -50%;
 }
 meter{
     border-radius: 0;
