@@ -72,7 +72,7 @@ document.addEventListener('keydown', function(e) {
     keyCombo[e.key.toUpperCase()] = {};
     keyCombo[e.key.toUpperCase()].ms = 1000;
     let randNumber = random(0,200);
-    keyCombo[e.key.toUpperCase()+randNumber].name = e.key.toUpperCase()+randNumber;
+    keyCombo[e.key.toUpperCase()+randNumber].name = ''+e.key.toUpperCase()+randNumber;
 });
 document.addEventListener('keyup', function(e) {
     keys[e.key.toUpperCase()] = false;
