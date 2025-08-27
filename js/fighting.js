@@ -51,12 +51,12 @@ let platforms = [
     { x:0,y:0,width:100,height:1.611721611721612},//This is the ground ***DON"T CHANGE THE ORDER***
 ];
 setInterval(TimerCheck,1000)
-setInterval(Decrease,10000)
+setInterval(Decrease,10)
 function Decrease() {
     try {
         Object.values(keyCombo).forEach(key => {
             if(key.ms > 0){
-                key.ms -= 100;
+                key.ms -= 10;
             }else{
                 delete keyCombo[key.name]
             }
