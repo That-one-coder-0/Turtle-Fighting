@@ -335,7 +335,7 @@ meter{
     translate: -50%;
     border-radius: 0px 0px 10px 10px;
 }
-h3{
+#BP1h3,#BP2h3,#BP3h3{
     position: absolute;
     left: 0px;
     color: chartreuse;
