@@ -83,19 +83,7 @@ button:hover{
     height: 100vh;
     width: 100vw;
 }
-#selectCharcter1 {
-    display: none;
-    width: max-content;
-    top: 50%;
-    translate: -50% -50%;
-}
-#selectCharcter2 {
-    display: none;
-    width: max-content;
-    top: 50%;
-    translate: -10% -50%;
-}
-#selectCharcter3 {
+#selectCharcter1,#selectCharcter2,#selectCharcter3,#selectCharcter4{
     display: none;
     width: max-content;
     top: 50%;
@@ -312,7 +300,6 @@ button:hover{
     height: 5vw;
     background-size: 100% 100%;
     background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
-    background-image: repeating-linear-gradient(180deg, #11FF0054 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at -167% 432%, #28FF0012 30%, #073AFF14 39%),radial-gradient(99% 99% at 0% 0%, #0026FFFF 0%, #FF070700 89%),radial-gradient(160% 154% at 1410px 389px, #00FF1BFF 15%, #0900FFFF 89%);
 }
 #BP1,#BP2,#BP3{
     width: 20vw;
@@ -329,17 +316,34 @@ meter{
     top: 0px;
     left:0px;
     border-radius: 0px 0px 10px 0px;
+    background-image: repeating-linear-gradient(180deg, #11FF0054 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at -167% 432%, #28FF0012 30%, #073AFF14 39%),radial-gradient(99% 99% at 109% 2%, #00FF1BFF 0%, #FF070700 100%),radial-gradient(160% 154% at 1053px -162px, #00FF1BFF 1%, #0900FFFF 77%);
 }
 #BP2div{
     top: 0px;
     right:0px;
     border-radius: 0px 0px 0px 10px;
+    background-image:repeating-linear-gradient(180deg, #11FF0054 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at -167% 432%, #28FF0012 30%, #073AFF14 39%),radial-gradient(99% 99% at -9% -9%, #00FF1BFF 0%, #FF070700 100%),radial-gradient(160% 154% at 1053px -162px, #00FF1BFF 1%, #0900FFFF 77%);
 }
 #BP3div{
     top: 0px;
-    right:-50%;
+    left:50%;
     translate: -50%;
     border-radius: 0px 0px 10px 10px;
+    z-index: 10;
+    background-image: repeating-linear-gradient(180deg, #11FF0054 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at -167% 432%, #28FF0012 30%, #073AFF14 39%),radial-gradient(99% 99% at 50% -9%, #00FF1BFF 0%, #FF070700 100%),radial-gradient(160% 154% at 1053px -162px, #00FF1BFF 1%, #0900FFFF 77%);
+}
+#BP4div {
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    translate: 50%;
+    width: 25vw;
+    height: 5vw;
+    border-radius: 0px 0px 10px 10px;
+    background-size: 100% 100%;
+    background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
+    background-image: repeating-linear-gradient(180deg, #11FF0054 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at -167% 432%, #28FF0012 30%, #073AFF14 39%),radial-gradient(99% 99% at 50% -9%, #00FF1BFF 0%, #FF070700 100%),radial-gradient(160% 154% at 1053px -162px, #00FF1BFF 1%, #0900FFFF 77%);
+    z-index: 10;
 }
 #BP1h3,#BP2h3,#BP3h3{
     position: absolute;
@@ -354,6 +358,12 @@ meter{
 #BP3h3{
     left: 50%;
     translate: -50%;
+}
+#BP4h3 {
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    color: chartreuse;
 }
 meter::-webkit-meter-optimum-value {
   box-shadow: 0 5px 5px -5px #999 inset;
@@ -376,14 +386,19 @@ meter::-webkit-meter-bar {
   background-image:
     linear-gradient(
       135deg,
-      transparent,
-      transparent 33%,
-      rgba(0, 0, 0, 0.1) 33%,
-      rgba(0, 0, 0, 0.1) 66%,
-      transparent 66%
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8) 33%,
+      rgba(0, 0, 0, 0.8) 33%,
+      rgba(0, 0, 0, 0.8) 66%,
+      rgba(255, 255, 255, 0.8) 66%
     );
     background-size: 2.6vw 1.5vw;
 }
 @keyframes animate-stripes {
   to { background-position: -50px 0; }
+}
+#timer{
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
 }

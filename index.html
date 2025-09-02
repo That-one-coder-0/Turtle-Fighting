@@ -13,6 +13,8 @@
             <button id="multiPlayer" onclick="multi1()">2 Player</button>
             <br><br>
             <button id="singlePlayer" onclick="multi2()">3 Player</button>
+            <br><br>
+            <button id="fourPlayer" onclick="multi4()">4 Player</button>
             <br>
         </div>
     </div>
@@ -28,6 +30,7 @@
         <div style="width: 5.567765567765568vw;height: 3.8095238095238098vw;" id="player"></div>
         <div style="width: 5.567765567765568vw;height: 3.8095238095238098vw;" id="player2"></div>
         <div style="width: 5.567765567765568vw;height: 3.8095238095238098vw;" id="player3"></div>
+        <div style="width: 5.567765567765568vw;height: 3.8095238095238098vw;" id="player4"></div>
         <div id="BP1div">
             <h3 id="BP1h3"></h3>
             <meter id="BP1" max="100" min="0" value="100" high="60" low="30" optimum="100"></meter>
@@ -39,6 +42,10 @@
         <div id="BP3div">
             <h3 id="BP3h3"></h3>
             <meter id="BP3" max="100" min="0" value="100" high="60" low="30" optimum="100"></meter>
+        </div>
+        <div id="BP4div">
+            <h3 id="BP4h3"></h3>
+            <meter id="BP4" max="100" min="0" value="100" high="60" low="30" optimum="100"></meter>
         </div>
     </div>
     <div id="selectCharcter" style="display: none;">
@@ -65,6 +72,14 @@
             <br>
             <h3>Player 3 <br> <img src="assets/other/ijl.png"width="120"></h3>
             <button id="submit3" onclick="Submit3()">Submit</button>
+        </div>
+        <div id="selectCharcter4" style="display: none;">
+            <button onclick="select7()"><</button>
+            <img src="assets/turtle/red/(state-ready-right).png" id="img4">
+            <button onclick="select8()">></button>
+            <br>
+            <h3>Player 4 <br> <img src="assets/other/setting icon.png" width="120"></h3>
+            <button id="submit4" onclick="Submit4()">Submit</button>
         </div>
     </div>
     <audio src="sounds/songs/Racing mode.mp3" id="audio"></audio>
